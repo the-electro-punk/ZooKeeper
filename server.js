@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express()
-
+// this is fun
 function filterByQuery(query, animalsArray) {
     let filteredResults = animalsArray;
     if (query.diet) {

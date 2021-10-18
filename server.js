@@ -3,7 +3,9 @@ const express = require('express');
 const app = express()
 
 app.get('/api/animals', (req, res) => {
-    res.json(animals);
+    let results = animals;
+    console.log(req.query)
+    res.json(results);
   });
 
 app.listen(3001, () => {

@@ -1,6 +1,14 @@
 const express = require('express');
-// this is fun
+
 const app = express()
+
+app.get('/api/animals', (req, res) => {
+    res.send('Hello!');
+  });
+
 app.listen(3001, () => {
     console.log(`API server now on port 3001!`);
   });
+  
+// this summons the list of animals
+  const { animals } = require('./data/animals');
